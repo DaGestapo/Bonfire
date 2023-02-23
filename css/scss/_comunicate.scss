@@ -1,0 +1,11 @@
+.comunicate {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+        width: 80%;
+    }
+}

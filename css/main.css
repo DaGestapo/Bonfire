@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+.header__main {
+  position: relative;
+  background: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  z-index: 100;
+}
+.header__main--logo::after {
+  content: "агенство email-маркетинга";
+  width: 175px;
+}
+.header__main--btn {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  width: 2.2rem;
+  height: 2rem;
+  gap: 20%;
+  cursor: pointer;
+}
+.header__main--btn .sector {
+  background-color: #DB6020;
+  width: 100%;
+  height: 15%;
+}
+.header__main--btn::before {
+  background-color: #DB6020;
+  content: "";
+  width: 100%;
+  height: 15%;
+}
+.header__main--btn::after {
+  background-color: #DB6020;
+  content: "";
+  width: 100%;
+  height: 15%;
+}
+.header__main--btn:hover .sector {
+  background-color: #b9541d;
+}
+.header__main--btn:hover::before {
+  background-color: #b9541d;
+}
+.header__main--btn:hover::after {
+  background-color: #b9541d;
+}
+
+.navbar {
+  position: absolute;
+  left: 0;
+  display: none;
+  flex-direction: row-reverse;
+  background-color: white;
+  top: 0;
+  width: 100vw;
+  transition: all 500ms ease-in-out;
+  z-index: 0;
+}
+.navbar ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 20px;
+  padding: 1rem 1rem 1rem 0;
+  font-weight: bold;
+  z-index: 0;
+}
+.navbar ul a:hover {
+  color: #DB6020;
+}
+
+main .header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+main .header--img {
+  width: 100%;
+}
+main .header--link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 1rem;
+}
+main .header--link h2 {
+  font-weight: 700;
+}
+main .header--link a {
+  text-align: center;
+}
+
+main .article {
+  display: grid;
+  grid-template-rows: 100% 100% 100% 100%;
+  gap: 2rem;
+}
+main .article section h1 {
+  margin-top: 1rem;
+  font-size: 22px;
+}
+main .article section p {
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+.comunicate {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+.comunicate a {
+  width: 80%;
+}
+
+.partnership {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.partnership__list {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.partnership__list--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+.partnership__list--item:hover {
+  transform: scale(1.1);
+}
+.partnership a {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.discussion {
+  display: grid;
+  grid-template-rows: 100% 100% 100% 100% 100%;
+  gap: 3rem;
+}
+.discussion__header {
+  text-align: center;
+}
+.discussion__header img {
+  margin-top: 1rem;
+}
+.discussion section p {
+  margin-top: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+header div {
+  width: 175px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+a[data-main-link] {
+  color: white;
+  background-color: #DB6020;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 20px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+a[data-main-link]:hover {
+  background-color: transparent;
+  border: 1px solid #DB6020;
+  color: black;
+}
+
+a[data-sub-link] {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 16px;
+  border: 1px solid #DB6020;
+  transition: all 0.2s ease-in-out;
+}
+a[data-sub-link]:hover {
+  border: 1px solid transparent;
+  background-color: #DB6020;
+}
+
+img {
+  width: 100%;
+}

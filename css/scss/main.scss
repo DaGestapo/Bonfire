@@ -1,0 +1,74 @@
+@import "variables";
+@import "header", "main-header", "articles", "comunicate", "partnership",
+"discussion";
+
+@import "utiles";
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+header {
+
+    div {
+        width: 175px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+a[data-main-link] {
+    color: white;
+    background-color: map-get($color , "primary" );
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 20px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid map-get($color , "primary" );
+        color: black;
+    }
+}
+
+a[data-sub-link] {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 16px;
+    border: 1px solid map-get($color , "primary" );
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        border: 1px solid transparent;
+        background-color: map-get($color , "primary" ); 
+    }
+
+}
+
+
+img {
+    width: 100%;
+}
