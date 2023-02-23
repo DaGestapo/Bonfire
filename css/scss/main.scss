@@ -1,8 +1,10 @@
 @import "variables";
 @import "header", "main-header", "articles", "comunicate", "partnership",
-"discussion";
+"discussion", "footer";
 
 @import "utiles";
+
+@import "responsive";
 body {
     font-family: 'Alegreya Sans', sans-serif;
 }
@@ -12,6 +14,7 @@ main {
     flex-direction: column;
     padding: 1rem;
     gap: 3rem;
+    margin-bottom: 4rem;
 }
 
 header {
@@ -66,6 +69,28 @@ a[data-sub-link] {
         background-color: map-get($color , "primary" ); 
     }
 
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid map-get($color , "gray-border" );
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+button[main-btn] {
+    background-color: map-get($color , "primary" );
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid map-get($color , "primary" );
+        color: black;
+    }
 }
 
 
