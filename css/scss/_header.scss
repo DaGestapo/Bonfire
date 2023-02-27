@@ -6,13 +6,26 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
-    z-index: 100;
+    z-index: 1;
 
     &--logo {
 
         &::after {
             content: "агенство email-маркетинга";
             width: 175px;
+        }
+    }
+
+    &__navbar {
+        display: none;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            font-weight: 500;
+            gap: 1rem;
+
         }
     }
     
