@@ -38,5 +38,3 @@ const partnershipObj = {
 for(let name of iconsNames) {
     list.append( partnershipObj.createElem(name) );
 }
-
-
