@@ -125,7 +125,7 @@ main .header--link a {
 
 main .article {
   display: grid;
-  grid-template-rows: 100% 100% 100% 100%;
+  grid-template-rows: auto auto auto auto;
   padding: 0 0.5rem;
   gap: 2rem;
 }
@@ -213,7 +213,7 @@ main .article .comunicate a {
 
 .discussion {
   display: grid;
-  grid-template-rows: 100% 100% 100% 100% 100%;
+  grid-template-rows: auto auto auto auto auto;
   gap: 4rem;
   padding: 0 0.5rem;
 }
@@ -241,9 +241,11 @@ main .article .comunicate a {
 
 .footer {
   display: grid;
-  grid-template-rows: 100% 100% 100%;
+  grid-template-rows: auto auto auto;
   border-top: 1px solid gray;
-  gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 1rem;
   padding: 1rem;
 }
 .footer__form {
@@ -665,7 +667,7 @@ img {
   }
   main .discussion {
     display: grid;
-    grid-template-rows: 100% 100% 100%;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
     -moz-column-gap: 4rem;
@@ -683,7 +685,7 @@ img {
     align-items: normal;
   }
   .footer {
-    grid-template-rows: 100% 100%;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 1fr 1fr;
     padding: 2rem 5rem;
   }
