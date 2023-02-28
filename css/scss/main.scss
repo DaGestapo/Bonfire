@@ -101,6 +101,7 @@ button[main-btn] {
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     color: white;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 
     &:hover {

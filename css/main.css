@@ -31,9 +31,12 @@
   position: absolute;
   width: 100%;
   height: 5px;
-  bottom: -2.3rem;
+  bottom: -3rem;
   left: 0;
   background-color: #DB6020;
+}
+.header__main__navbar ul a[data-menu-item]:hover {
+  color: #DB6020;
 }
 .header__main__navbar ul a[data-menu-item]:hover::after {
   content: "";
@@ -293,6 +296,9 @@ main .article .comunicate a {
 .footer__contacts nav ul a {
   color: #DB6020;
 }
+.footer__contacts nav ul a:hover {
+  color: #b9541d;
+}
 .footer footer p {
   margin: 0;
 }
@@ -300,6 +306,9 @@ main .article .comunicate a {
   color: #DB6020;
   font-weight: 400;
   font-size: 16px;
+}
+.footer footer a:hover {
+  color: #b9541d;
 }
 
 * {
@@ -398,6 +407,7 @@ button[main-btn] {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   color: white;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 button[main-btn]:hover {
