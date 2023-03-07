@@ -4,7 +4,7 @@ let check = true;
 export function menu(e) {
     let target = e.target;
 
-    if(target.closest('BUTTON').className != 'header__main--btn') return;
+    if(target.closest('BUTTON').className != 'header-btn') return;
     
     let navBar = document.querySelector('.navbar');
     if(check) {

@@ -1,4 +1,4 @@
-.discussion {
+.block5 {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     gap: 4rem;
@@ -18,7 +18,7 @@
     }
   }
 
-  section {
+  &__child {
     display: flex;
     flex-direction: column;
     align-items: left;

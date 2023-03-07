@@ -1,4 +1,4 @@
-.header__main {
+.header{
     position: relative;
     background: white;
     padding: 1rem;
@@ -8,10 +8,10 @@
     border-bottom: 1px solid black;
     z-index: 1;
 
-    &--logo {
+    &__logo {
 
         &::after {
-            content: "агенство email-маркетинга";
+            content: "агентство email-маркетинга";
             width: 175px;
         }
     }
@@ -51,7 +51,7 @@
     }
     
 
-    &--btn {
+    &-btn {
         display: flex;
         flex-direction: column;
         background: transparent;

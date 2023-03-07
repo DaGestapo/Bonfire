@@ -1,5 +1,5 @@
 
-const list = document.querySelector('.partnership__list');
+const list = document.querySelector('.block3__list');
 const iconsNames = ['Beeline-logo-2.png',
 'beststocks-3.jpg',
 'bio-rad-logo-3.jpg',
@@ -28,7 +28,7 @@ const partnershipObj = {
         img.src = `./img/icons/${src}`;
         img.alt = `Image did't load`;
 
-        div.className = `partnership__list--item`;
+        div.className = `block3__list-item`;
         div.append(img);
 
         return div;

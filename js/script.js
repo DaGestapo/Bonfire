@@ -1,7 +1,7 @@
 import {menu} from "./popUpMenu.js";
 
 
-let header = document.querySelector('.header__main');
+let header = document.querySelector('.header');
 
 
 (() => {
